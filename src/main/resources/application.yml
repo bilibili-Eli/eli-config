@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eli-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/bilibili-Eli/ConfigRepository
+          username: bilibili-Eli
+          password: Lovery0528
+server:
+  port: 9000
