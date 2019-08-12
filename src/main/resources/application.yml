@@ -10,3 +10,8 @@ spring:
           password: Lovery0528
 server:
   port: 9000
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8800/eureka/
