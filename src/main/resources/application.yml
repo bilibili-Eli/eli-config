@@ -1,3 +1,5 @@
+server:
+  port: 9000
 spring:
   application:
     name: eli-config-server
@@ -8,10 +10,17 @@ spring:
           uri: https://github.com/bilibili-Eli/ConfigRepository
           username: bilibili-Eli
           password: Lovery0528
-server:
-  port: 9000
-
+        # svn配置
+        # svn:
+        #   uri: http://svnhost:port/svn/app-config # SVN仓库地址
+        #   username: svnuser # SVN账号(如果没有权限可为空)
+        #   password: svnpassword#SVN密码(如果没有权限可为空)
+        #   default-label: trunk # 默认SVN分支
+        # 本地文件配置
+        # native:
+        #   search-locations: classpath:/configs #配置文件存放的目录
 eureka:
   client:
-    service-url:
-      default-zone: http://localhost:8800/eureka/
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7070/eureka/
+
